@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="white">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Planta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Teste</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Teste</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Teste</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="page-container">
+    <!-- Botão para abrir o modal ou formulário -->
+    <button class="btn btn-outline-success" id="adicionar-card-button">Adicionar Card</button>
+
+    <!-- Colunas de cards -->
+    <div class="columns-container">
+        <!-- Nenhuma coluna inicialmente -->
+    </div>
+</div>
+
+<!-- Modal ou formulário para adicionar um card -->
+<div id="adicionar-card-modal" class="modal form-control">
+    <div class="modal-content">
+        <span class="fechar-modal">&times;</span>
+        <h2 class="mb-3">Adicionar Card</h2>
+        <input class="form-label border border-white mb-3" id="nome-coluna" type="text" placeholder="Nome da Coluna">
+        <textarea class="form-label border border-white" id="conteudo-card" placeholder="Digite seu conteúdo aqui"></textarea>
+        <button class="btn btn-dark" id="criar-card">Criar Card</button>
+    </div>
+</div>
+
+
+  <!-- <div class="page-container">
+    <div class="row">
+      <div class="column" id="chamados-column">
+        <h1>Chamados</h1>
+        <button class="btn btn-outline-success mt-2 adicionar-card">Adicionar Card</button>
+        <div class="card-container">
+
+        </div>
+
+      </div>
+
+      <div class="column" id="teste-column">
+        <h1>Teste</h1>
+        <button class="btn btn-outline-success mt-2 adicionar-card">Adicionar Card</button>
+        <div class="card-container">
+
+        </div>
+
+      </div>
+
+      <div class="column">
+        <h1>Teste</h1>
+        <button class="btn btn-outline-success mt-2 adicionar-card">Adicionar Card</button>
+        <div class="card-container">
+
+        </div>
+
+      </div>
+
+      <div class="column">
+        <h1>Teste</h1>
+        <button class="btn btn-outline-success mt-2 adicionar-card">Adicionar Card</button>
+        <div class="card-container">
+            
+        </div>
+
+      </div>
+
+
+    </div> -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
